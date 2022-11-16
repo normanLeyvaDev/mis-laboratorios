@@ -1,0 +1,182 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+header img {
+    width: 10%
+}
+
+header nav ul {
+    display: flex; 
+    list-style: none; 
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 5px;
+}
+
+header nav ul li:hover {
+    color: #00B172;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+
+#main-section {
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 18em;
+    padding: 9em;
+    width: auto;
+}
+
+@media (max-width: 800px) {
+    #main-section {
+      flex-direction: column;
+    }
+  }
+
+h1, h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 58px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 19px;
+    text-align: center;
+}
+
+#advantages h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#iconos h2 {
+    color: #00B172;
+}
+
+#iconos img {
+    width: 8%;
+}
+
+@media (max-width: 800px) {
+    #iconos {
+      flex-direction: column;
+    }
+  }
+
+span {
+    border-bottom: 5px solid #00B172;
+    padding-bottom: 5px;
+}
+
+#advantages ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 5em;
+}
+
+@media (max-width: 800px) {
+    #iconos ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+#iconos img {
+    width: 8em;
+}
+
+#iconos li {
+    width: 20%;
+}
+
+#contenedorVerde {
+    background-color: #00B172;
+    padding: 4em 4em;
+    margin: 0 2em;
+    color: white;
+    line-height: 2em;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    #contenedorVerde {
+      flex-direction: column;
+    }
+    #contenedorVerde img {
+        display: none;
+    }
+  }
+
+#textoIzquierdaContenedorVerde span {
+    border-bottom: 4px solid white;
+    padding-bottom: 2px;
+}
+#logoBlancoSpotify img {
+    width: 5em;
+    padding: 2em;
+}
+
+#reproductorMusicaKanye img {
+    width: 18em;
+}
+
+
