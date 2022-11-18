@@ -17,6 +17,7 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration3:Loops
-//3.1 
+// //3.1 
 for (let i = 0; i < hacker1.length; i++) {
     console.log(hacker1.split(""));
+}

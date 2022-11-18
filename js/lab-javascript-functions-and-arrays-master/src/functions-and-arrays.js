@@ -32,65 +32,46 @@ function findLongestWord(words) {
 } 
 console.log(findLongestWord(words));
 
-
 // Iteration #3: Calculate the sum
-const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
-function sumNumbers(sumArray) {
+const numbersArray = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+function sumNumbers(numeros) {
   let suma = 0;
-  // for (let i = 0; i < sumArray.length; i++) {
-  //    suma += sumArray[i];
-  // }
-  sumArray.forEach(element => {
-    suma += element;
-  });
-  return suma;
-} 
-console.log(sumNumbers(numbers));
+  for (let n of numeros) {
+    suma += n;
+  }
+  
+  if (!numeros.length) {
+    return 0;
+  } 
+  
+}
 
-/*
-Creas una constante -> le asignas espacio en memoria. 
-En memoria solo se pueden almacenar dos cosas. O punteros o datos primitivos. 
-Al pasar numbers como parámetros, lo que hago es que sumArray APUNTA a numbers.
-*/
+
 
 
 // Iteration #3.1 Bonus:
-function sum(arraySum) {
-  let result = 0;
+function sum(numeros) {
 
-  arraySum.forEach(element => {
-    //if (typeof element === "string") result += element.length;
-    //if (typeof element === "number") result += element;
-    //if (typeof element === "boolean" && element === true) result++;
-
-    if (typeof element === "string") {
-      result += element.length;
-    } else if (typeof element === "number") {
-      result += element;
-    } else if (typeof element === "boolean" && element === true) {
-      result++;
-    } else { 
-      //throw error
-    }
-  });
-
-  if (arraySum.length == 0) result = 0;
-  return result; 
 }
 
 
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+const arraySum = [2, 6, 9, 10, 7, 4, 1, 9];
+const suma = arraySum.reduce((a, b) => a + b);
+console.log(suma);
 
-function averageNumbers() {}
-
+function averageNumbers(averageArray) {
+  
+}
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength() {
+  
+ }
 
 // Bonus - Iteration #4.1
 function avg() {}
