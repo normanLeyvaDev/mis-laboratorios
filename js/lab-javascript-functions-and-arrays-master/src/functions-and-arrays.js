@@ -2,7 +2,7 @@
 function maxOfTwoNumbers(num1, num2) {
   return Math.max(num1, num2);
 }
-console.log(maxOfTwoNumbers);
+// console.log(maxOfTwoNumbers);
 //
 function maxOfTwoNumbersIf(num1, num2) {
   let result = num1;
@@ -36,21 +36,21 @@ function findLongestWord(words) {
   if (words.length == 0) theLongestWord = null;
   return theLongestWord;
 }
-console.log(findLongestWord(words));
+// console.log(findLongestWord(words));
 
 // Iteration #3: Calculate the sum
 const numbersArray = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 function sumNumbers(numeros) {
   let result = 0;
   for (let i = 0; i < numeros.length; i++) {
-    console.log("Numbers array: " + numeros[i]);
+    // console.log("Numbers array: " + numeros[i]);
     result += numeros[i];
   }
 
   if (!numeros.length) {
     result = 0;
   }
-  console.log(result);
+  // console.log(result);
   return result;
 }
 
@@ -67,7 +67,7 @@ function sum(numeros) {
       typeof numeros[i] != "boolean" &&
       typeof numeros[i] != "number"
     )
-      throw "error";
+      throw Error("Unsupported data type sir or ma'am");
   }
 
   return result;
@@ -100,28 +100,34 @@ const wordsArr = [
   "palace",
 ];
 
-function averageWordLength(wordsArr) { 
+function averageWordLength(wordsArr) {
   if (!wordsArr.length) return null;
+  // arrayLegth = wordsArr.length = 10;
+  // join =
   let arrayLength = wordsArr.length,
-    joined = wordsArr.join(''),
+    joined = wordsArr.join(""),
     result = joined.length / arrayLength;
   return result;
 }
 
-
-
-
-
-
-
-
-
 // Bonus - Iteration #4.1
-function avg(wordsArr) {
-  if (!wordsArr.length) return null;
+const mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
+function avg(mixedArr) {
+  if (!mixedArr.length) return null;
+
+  let result = 0;
+  for (let i = 0; i < mixedArr.length; i++) {
+    if (typeof mixedArr[i] === "number") result += mixedArr[i];
+    if (typeof mixedArr[i] === "string") result += mixedArr[i].length;
+    if (mixedArr[i] === true) result++;
+  }
+
+  let mediaAvg = result / mixedArr.length;
+  console.log(mediaAvg);
+
+  return mediaAvg;
+  console.log(mediaAvg);
 }
-
-
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -137,12 +143,22 @@ const wordsUnique = [
   "simple",
   "bring",
 ];
+console.log(wordsUnique.indexOf);
 
 function uniquifyArray(wordsUnique) {
+  const unicos = [];
+
+  for (let i = 0; i < wordsUnique.length; i++) {
+    const elementoDuplicado = wordsUnique[i];
+
+    if (!unicos.includes(wordsUnique[i])) {
+      unicos.push(elementoDuplicado);
+    }
+    console.log(unicos);
+    return unicos;
+  }
+
   if (!wordsUnique.length) return null;
-  
-  let uniqueArray = wordsUnique.join("");
-  return uniqueArray;
 }
 
 // Iteration #6: Find elements
@@ -159,10 +175,9 @@ const wordsFind = [
 
 function doesWordExist(wordsFind) {
   if (!wordsFind.length) return null;
-  if (wordsFind.length = 1) return true;
+  if ((wordsFind.length = 1)) return true;
   if (!wordsFind[i]) return false;
 }
-
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -181,8 +196,7 @@ const wordsCount = [
 
 function howManyTimes(wordsCount) {
   if (!wordsCount.length) return 0;
-  if (wordsCount.length = 1) return 1;
-
+  if ((wordsCount.length = 1)) return 1;
 }
 
 // Iteration #8: Bonus
