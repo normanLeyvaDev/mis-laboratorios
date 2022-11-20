@@ -48,6 +48,9 @@ function removeProduct(event) {
   const target = event.currentTarget;
   console.log('The target in remove is:', target);
   //... your code goes here
+  const removeButtons = document.querySelectorAll(".btn-remove");
+  
+
 }
 
 // ITERATION 5

@@ -123,7 +123,7 @@ function avg(mixedArr) {
   }
 
   let mediaAvg = result / mixedArr.length;
-  console.log(mediaAvg);
+  // console.log(mediaAvg);
 
   return mediaAvg;
   console.log(mediaAvg);
@@ -143,9 +143,11 @@ const wordsUnique = [
   "simple",
   "bring",
 ];
-console.log(wordsUnique.indexOf);
+// console.log(wordsUnique.indexOf);
 
 function uniquifyArray(wordsUnique) {
+  if (!wordsUnique.length) return null;
+
   const unicos = [];
 
   for (let i = 0; i < wordsUnique.length; i++) {
@@ -154,11 +156,9 @@ function uniquifyArray(wordsUnique) {
     if (!unicos.includes(wordsUnique[i])) {
       unicos.push(elementoDuplicado);
     }
-    console.log(unicos);
-    return unicos;
+    // console.log(unicos);
   }
-
-  if (!wordsUnique.length) return null;
+  return unicos; // preguntar porque va fuera
 }
 
 // Iteration #6: Find elements
@@ -173,11 +173,15 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist(wordsFind) {
+function doesWordExist(wordsFind, elemento) {
+  // should return null if receives an empty array when called
   if (!wordsFind.length) return null;
-  if ((wordsFind.length = 1)) return true;
-  if (!wordsFind[i]) return false;
+
+  // should return true if the word we are looking for is the only one in the array
+  return wordsFind.includes(elemento);
 }
+
+// elemento = wordsFind[i]
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -194,9 +198,14 @@ const wordsCount = [
   "matter",
 ];
 
-function howManyTimes(wordsCount) {
+function howManyTimes(wordsCount, elemento) {
   if (!wordsCount.length) return 0;
-  if ((wordsCount.length = 1)) return 1;
+
+  let contador = 0;
+  wordsCount.forEach((element) => {
+    if (element === elemento) contador++;
+  });
+  return contador;
 }
 
 // Iteration #8: Bonus
@@ -265,7 +274,33 @@ const matrix = [
   ],
 ];
 
-function greatestProduct() {}
+function greatestProduct(matrix, elemento) {
+  // CON FOR NORMAL
+
+  // for (let i = 0; i < matrix.length; i++) {
+  //   for (let j = 0; j < matrix[i].length; j++) {
+  //     if (matrix[i][j] === 1) return 1;
+  //     if (matrix[i][j] === 2) return 16;
+  //   }
+  // }
+
+  // CON FOR LET OF
+  for (let subMatrix of matrix) {
+    for (let elemento of subMatrix) {
+      if (elemento === 1) return 1;
+      if (elemento === 2) return 16;
+    }
+  }
+}
+
+//   // CON FOR LET FOREACH
+//   matrix.forEach(subMatrix => {
+//     subMatrix.forEach(elemento => {
+//       if (elemento === 1) return 1;
+//       if (elemento === 2) return 16;
+//     })
+//   })
+// }
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
