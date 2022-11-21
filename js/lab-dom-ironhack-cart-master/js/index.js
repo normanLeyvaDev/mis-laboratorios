@@ -37,25 +37,30 @@ function calculateAll() {
 // ITERATION 4
 
 function removeProduct(event) {
-  const target = event.currentTarget;
+  const target = event.currentTarget; // donde sucedio
   console.log('The target in remove is:', target);
   //... your code goes here
 
-  const removeButtons = document.querySelectorAll('.btn-remove');
-  removeButtons.addEventListener('click', removeProduct);
+  console.log(target.parentNode.parentNode);
+  const node = target.parentNode.parentNode;
+  target.parentNode.parentNode.parentNode.removeChild(node);
 }
 
+// const removeButtons = document.querySelectorAll('.btn-remove');
+// removeButtons.addEventListener('click', removeProduct);
 // ITERATION 5
 
 function createProduct() {
   //... your code goes here
 }
 
+// realiza una consulta de remove buttons
 window.addEventListener('load', () => {
   const calculatePricesBtn = document.getElementById('calculate');
   calculatePricesBtn.addEventListener('click', calculateAll);
 
   //... your code goes here
+  // loop, a todos los elementos que tengan el tag btn-remove les añade un addeventlistener de tipo click que llama a la funcion removeProduct
   const removeButtons = document.querySelectorAll('.btn-remove');
   removeButtons.forEach((button) =>
     button.addEventListener('click', removeProduct)

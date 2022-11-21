@@ -198,12 +198,12 @@ const wordsCount = [
   "matter",
 ];
 
-function howManyTimes(wordsCount, elemento) {
+function howManyTimes(wordsCount, word) {
   if (!wordsCount.length) return 0;
 
   let contador = 0;
   wordsCount.forEach((element) => {
-    if (element === elemento) contador++;
+    if (element === word) contador++;
   });
   return contador;
 }
@@ -277,23 +277,23 @@ const matrix = [
 function greatestProduct(matrix, elemento) {
   // CON FOR NORMAL
 
-  // for (let i = 0; i < matrix.length; i++) {
-  //   for (let j = 0; j < matrix[i].length; j++) {
-  //     if (matrix[i][j] === 1) return 1;
-  //     if (matrix[i][j] === 2) return 16;
-  //   }
-  // }
-
-  // CON FOR LET OF
-  for (let subMatrix of matrix) {
-    for (let elemento of subMatrix) {
-      if (elemento === 1) return 1;
-      if (elemento === 2) return 16;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] === 1) return 1;
+      if (matrix[i][j] === 2) return 16;
     }
   }
 }
+  // CON FOR LET OF
+//   for (let subMatrix of matrix) {
+//     for (let elemento of subMatrix) {
+//       if (elemento === 1) return 1;
+//       if (elemento === 2) return 16;
+//     }
+//   }
+// }
 
-//   // CON FOR LET FOREACH
+  // CON FOR LET FOREACH
 //   matrix.forEach(subMatrix => {
 //     subMatrix.forEach(elemento => {
 //       if (elemento === 1) return 1;
