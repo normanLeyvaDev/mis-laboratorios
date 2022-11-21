@@ -104,9 +104,9 @@ obtainInstruction("steak", 0)
     return obtainInstruction("steak", 7);
   })
   .then((paso) => {
+    document.querySelector("#steak").innerHTML += `<li>{paso}</li>`;
     document.querySelector("#steak").innerHTML += `<li>Steak is ready!</li>`;
     document.querySelector("#steakImg").removeAttribute("hidden");
-    return obtainInstruction("steak", 8);
   });
 
 // It.3
@@ -149,35 +149,26 @@ Promise.all([paso0, paso1, paso2, paso3, paso4, paso5, paso6, paso7])
     document.querySelector(
       "#brusselsSprouts"
     ).innerHTML += `<li>brussels sprouts are ready!</li>`;
-    document.querySelector("#brusselsSproutsImg").removeAttribute;
+
     document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
   })
   .catch((Error) => console.log(error));
 
+// CON ASYNC AWAIT
+// async function makeBrusselsSprouts() {
+//   // try & catch
+//   try {
+//     // crear variable para hacer generar el constructor con la palabra Promise y le encadenamos el metodo .all() con todas las variables definidas arriba. recuerda que tenemos que esperar a todas estas llamadas.
+//     const valores await Promise.all([paso0, paso1, paso2, paso3, paso4, paso5, paso6, paso7]);
 
-  // CON ASYNC AWAIT
-async function makeBrusselsSprouts() {
-  // try & catch
-  try {
-    // crear variable para hacer generar el constructor con la palabra Promise y le encadenamos el metodo .all() con todas las variables definidas arriba. recuerda que tenemos que esperar a todas estas llamadas.
-    const valores await Promise.all([paso0, paso1, paso2, paso3, paso4, paso5, paso6, paso7]);
+//     valores.forEach((instruccionDePaso) => {
+//       document.querySelector("#brusselsSprouts").innerHTML += `<li>${instruccionDePaso}</li>`;
+//       document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprouts are ready!</li>`;
 
-    valores.forEach((instruccionDePaso) => {
-      document.querySelector("#brusselsSprouts").innerHTML += `<li>${instruccionDePaso}</li>`;
-      document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprouts are ready!</li>`;
-
-      document.querySelector("#brusselsSproutsImg").removeAttribute;
-      document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
-    });
-
-    // se añade el texto a pelo
- 
-
-    }
-
-
-
-
-
-  }
-}
+//       document.querySelector("#brusselsSproutsImg").removeAttribute("hidden")
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+//   }
+// makeBrusselsSprouts();
