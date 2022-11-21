@@ -1,8 +1,10 @@
 # README DE MIS LABORATORIOS IRONHACK
 
+![This is an image](https://saturnolabs.com/image/svg/pc.svg)
+
 ## Contenido visto durante la primera semana del curso
 
-> ##### HTML -------------------------
+> HTML
 
 INTRO HTML
 BASIC LAYOUT
@@ -18,13 +20,12 @@ IDS Y CLASS EN CSS
 SEMANTICA
 FORMS - FORMULARIOS
 
-> ##### CSS -------------------------
+> CSS
 
 TEORIA BASICA
 SELECTORES
-MODIFICACION DE FUENTES
-MODIFICACION DE COLORES
-MODIFICACION DE BORDES Y BACKGROUNDS
+_ MODIFICACION DE FUENTES
+_ MODIFICACION DE COLORES \* MODIFICACION DE BORDES Y BACKGROUNDS
 EXPLICACION DEL MODELO BOX
 FLOAT ALIGN
 LINKS Y BOTONES
@@ -35,7 +36,7 @@ MEDIA QUERIES PARA DISEÑO RESPONSIVO
 
 ## Contenido visto durante la segunda semana del curso
 
-> ##### JAVASCRIPT -------------------------
+> JAVASCRIPT
 
 JS BASICS
 TIPOS DE DATOS
