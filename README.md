@@ -1,6 +1,6 @@
 # README DE MIS LABORATORIOS IRONHACK
 
-![This is an image](https://saturnolabs.com/image/svg/pc.svg)
+![](https://saturnolabs.com/image/svg/pc.svg | width=100)
 
 ## Contenido visto durante la primera semana del curso
 
