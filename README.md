@@ -1,8 +1,8 @@
-# mis-laboratorios
+# README DE MIS LABORATORIOS IRONHACK
 
-[SEMANA 1]
+## Contenido visto durante la primera semana del curso
 
-HTML -------------------------
+> ##### HTML -------------------------
 
 INTRO HTML
 BASIC LAYOUT
@@ -18,7 +18,7 @@ IDS Y CLASS EN CSS
 SEMANTICA
 FORMS - FORMULARIOS
 
-CSS -------------------------
+> ##### CSS -------------------------
 
 TEORIA BASICA
 SELECTORES
@@ -33,9 +33,9 @@ POSICIONES
 INLINE Y INBLOCK
 MEDIA QUERIES PARA DISEÑO RESPONSIVO
 
-[SEMANA 2]
+## Contenido visto durante la segunda semana del curso
 
-JAVASCRIPT -------------------------
+> ##### JAVASCRIPT -------------------------
 
 JS BASICS
 TIPOS DE DATOS
