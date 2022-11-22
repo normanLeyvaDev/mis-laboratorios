@@ -72,7 +72,7 @@ getInstruction(
 // Iteration 2 - using promises
 // ...
 // se tiene que declarar una funcion asincrona y luego llamarla
-getInstruction();
+// getInstruction();
 
 obtainInstruction("steak", 0)
   .then((paso) => {
@@ -104,8 +104,8 @@ obtainInstruction("steak", 0)
     return obtainInstruction("steak", 7);
   })
   .then((paso) => {
-    document.querySelector("#steak").innerHTML += `<li>{paso}</li>`;
-    document.querySelector("#steak").innerHTML += `<li>Steak is ready!</li>`;
+    document.querySelector("#steak").innerHTML += `<li>${paso}</li>`;
+    document.querySelector("#steak").innerHTML += `<li>Stake is ready!</li>`;
     document.querySelector("#steakImg").removeAttribute("hidden");
   });
 

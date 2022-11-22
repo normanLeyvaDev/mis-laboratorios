@@ -51,3 +51,16 @@ ARREGLOS Y COMO MANIPULARLOS<br />
 DOM Y SU MANIPULACION<br />
 BROWSER EVENTS<br />
 ASYNC<br />
+
+## Contenido visto durante la segunda semana del curso
+
+LUNES 21/
+Comenzamos la semana finalizando el laboratorio de "Promise me a diner"
+
+Entramos en nuevo temario:
+
+> APIS
+
+Aprendemos lo que es una api y como interactuamos con ella, como hace un FETCH y a manipular ficheros JSON para trabajar con ellos desde JS.
+
+Tambien analizamos los tipos de request que podemos hacer a la api: GET, POST.... e hicimos algunos ejemplos.

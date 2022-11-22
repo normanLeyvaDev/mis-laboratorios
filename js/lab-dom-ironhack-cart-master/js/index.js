@@ -52,7 +52,14 @@ function removeProduct(event) {
 
 function createProduct() {
   //... your code goes here
+
+  addProduct.addEventListener('click', createProduct);
 }
+
+
+
+
+
 
 // realiza una consulta de remove buttons
 window.addEventListener('load', () => {
