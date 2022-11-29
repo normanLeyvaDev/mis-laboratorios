@@ -2,65 +2,66 @@
 
 <img src="https://saturnolabs.com/image/svg/pc.svg" align="center" width=100 heigh="150">
 
-## Contenido visto durante la primera semana del curso
+# LUNES 14/
 
-> HTML
+Tipos de Datos Primitivos JS: numeros, strings, boleanos, undefined y null.
+Datos no-primitivos: Arreglos y Objetos.
+Variables.
+Funciones.
 
-INTRO HTML<br />
-BASIC LAYOUT<br />
-METATAGS<br />
-TPOGRAPHY<br />
-LINKS<br />
-IMAGENES<br />
-LISTAS<br />
-LAYOUTS<br />
-CREACION DE TABLAS<br />
-ESTRUCTURA INLINE Y INBLOCK<br />
-IDS Y CLASS EN CSS<br />
-SEMANTICA<br />
-FORMS - FORMULARIOS<br />
+Laboratorio de Funciones y Arreglos.
 
-> CSS
+# MARTES 15/
 
-TEORIA BASICA<br />
-SELECTORES<br />
+Introduccion al DOM
+Manipulando el DOM
+Eventos Basicos
 
-- MODIFICACION DE FUENTES<br />
-- MODIFICACION DE COLORES<br />
-- MODIFICACION DE BORDES Y BACKGROUNDS<br />
-  EXPLICACION DEL MODELO BOX<br />
-  FLOAT ALIGN<br />
-  LINKS Y BOTONES<br />
-  ESTILIZANDO MENU<br />
-  POSICIONES<br />
-  INLINE Y INBLOCK<br />
-  MEDIA QUERIES PARA DISEÑO RESPONSIVO<br />
+Laboratorio carrito de compra.
 
-## Contenido visto durante la segunda semana del curso
+# MIERCOLES 16/
 
-> JAVASCRIPT
+Vemos los metodos de arreglos como map,reduce, filter.
 
-JS BASICS<br />
-TIPOS DE DATOS<br />
-QUE SON LAS VARIABLES<br />
-QUE SON LOS OPERADORES Y SUS TIPOS<br />
-CONDICIONALES<br />
-FUNCIONES<br />
-LOOPS O BUCLES<br />
-ARREGLOS Y COMO MANIPULARLOS<br />
-DOM Y SU MANIPULACION<br />
-BROWSER EVENTS<br />
-ASYNC<br />
+Laboratorio de Greatests Movies.
 
-## Contenido visto durante la segunda semana del curso
+# JUEVES 17/
 
-LUNES 21/
+Funciones avanzadas - callbacks
+Promesas
+Async functions
+Async and wait
+
+Laboratorio Promise me a dinnner
+
+# VIERNES 18/
+
 Comenzamos la semana finalizando el laboratorio de "Promise me a diner"
 
-Entramos en nuevo temario:
-
-> APIS
+Explicacion de las APIS
 
 Aprendemos lo que es una api y como interactuamos con ella, como hace un FETCH y a manipular ficheros JSON para trabajar con ellos desde JS.
 
 Tambien analizamos los tipos de request que podemos hacer a la api: GET, POST.... e hicimos algunos ejemplos.
+DEL MARTES 22 -
+
+Empezamos a trabajar en el Mid Project.
+
+Trabajo en el Mid, el viernes 25 expongo ante los compañeros.
+
+# LUNES 21/ - VIERNES 26/
+
+Jornada completamente dedicada a preparar el Mid.
+
+# VIERNES 25/
+
+Presentación a los compañeros del Mid.
+
+# LUNES 28/
+
+Empezamos el módulo de vue:
+
+- Que es vue y para que se usa.
+- Como levantar un servidor local con vue.
+- Como injectar datos al html a través de los componentes.
+- Directivas de texto, de html y bindeo.
