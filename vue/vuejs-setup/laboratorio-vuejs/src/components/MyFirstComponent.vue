@@ -13,10 +13,11 @@ const myName = ref("Norman L");
 const myAge = ref(38);
 const myCity = ref("Barcelona");
 
-// iteracion 3 bono
+// iteracion 3 bonus
 const clickHello = () => console.log('Hola Mundo');
 
-// iteracion 4
+// iteracion 4 bonus
+
 
 
 </script>
