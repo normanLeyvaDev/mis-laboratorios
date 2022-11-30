@@ -65,3 +65,7 @@ Empezamos el módulo de vue:
 - Como levantar un servidor local con vue.
 - Como injectar datos al html a través de los componentes.
 - Directivas de texto, de html y bindeo.
+
+# martes 29/
+
+Hacemos dos ejercicios prácticos guiados en clase para practicar los coneceptos aprendidos en vue y comenzamos el laboratorio del módulo.
